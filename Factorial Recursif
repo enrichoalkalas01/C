@@ -1,0 +1,36 @@
+/*
+	Name : Enricho Alkalas
+	City : Depok Indonesia
+	Program Name : Factorial Recursif
+*/
+
+#include <iostream>
+
+using namespace std ;
+
+int factorial(int x) ;
+
+int main ()
+{
+	int n ;
+	cout << " This Is Factorials Rekursif " << endl ;
+	cout << " Input Number : " ;
+	cin >> n ;
+
+	cout << endl ;
+	//rekursif_factorials
+	cout << " Result : " << factorial(n) ;
+	cout << endl ;
+}
+
+int factorial(int x)
+{
+	if(x==1)
+	{
+		return 1 ;
+	}
+	else
+	{
+		return x*factorial(x-1);
+	}
+}
