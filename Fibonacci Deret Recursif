@@ -1,0 +1,38 @@
+/*
+  Name : Enricho Alkalas
+  NIM : 0110217052
+  Program Name : Row Of Fibonacci
+*/
+#include <iostream>
+
+using namespace std ;
+
+int fibo(int n)
+{
+  if(n==0)
+    return 0;
+  else if(n==1)
+    return 1;
+  else
+    //fungsi rekursif
+    return fibo(n-1)+fibo(n-2);
+}
+
+int main()
+{
+
+ int bil;
+
+ cout << " Recursive Function to find N Fibonacci Numbers" << endl ;
+
+ cout << " Enter The Number Of Terms : " ;
+ cin >> bil ;
+
+ cout << " Fibonacci : " << fibo(bil) << endl ;
+ cout << " Row Of Fibonacci  : ";
+      for (int i = 0; i <= bil; i++)
+      {
+            cout << fibo(i) << " ";
+      }
+      cout << endl;
+}
