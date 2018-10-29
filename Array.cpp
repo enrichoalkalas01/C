@@ -1,36 +1,37 @@
-/*
-	Name : Enricho Alkalas
-	City : Depok Indonesia
-	Program Name : Array
-*/
-
 #include <iostream>
 
 using namespace std ;
 
-int main ()
-{
-	int x ;
-	cout << " Array " << endl ;
-	cout << " Input Banyak Data : " ;
-	cin >> x ;
+main ()
+{	
+	int n,i ;
+	cout << "-----------------" << endl ;
+	cout << " Array Operation " << endl ;
+	cout << "-----------------" << endl ;
+	cout << " Input Range Of Array  : " ;
+	cin >> n ;
 
-	int array[x];
+	int arr[n] ;
 
-	for (int i=0; i<x; i++)
+	cout << endl ;
+
+	cout << "-----------------" << endl ;
+	cout << "   Input Array   " << endl ;
+	cout << "-----------------" << endl ;
+	for ( i = 0; i < n; i++ )
 	{
-		cout << " Index Ke - " << i << " : " ; 
-		cin >> array[i] ; 
+		cout << "Input Array " << i << " : " ; cin >> arr[i] ;
 	}
 
 	cout << endl ;
-	
-	//Output Array
-	cout << " This Is Array " << endl ;
 
-	for (int j=0; j<x; j++)
+	cout << "-----------------" << endl ;
+	cout << " OutPut Of Array " << endl ;
+	cout << "-----------------" << endl ;
+	for ( i = 0; i < n; i++ )
 	{
-		cout << " Data Index Ke - " << array[j] << endl ;
+		cout << "Input Array " << i << " : " << arr[i] << endl ;
 	}
 
+	cout << endl ;
 }
